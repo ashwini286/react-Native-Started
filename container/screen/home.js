@@ -1,15 +1,29 @@
-import React from 'react'
-import { Button, Text, View } from 'react-native'
-const home = ({navigation}) => {
+import React from "react";
+import { Button, Text, View } from "react-native";
+const home = ({ navigation }) => {
   return (
-    <View style={{alignItems: 'center', justifyContent: 'center', width: '100%', height: '100%', gap: 10}}> 
-
-    <Text style={{fontSize: 20, fontWeight: 'bold'}}>
-      this is home page
-    </Text>
-    <Button title="Go to Product" onPress={() => navigation.navigate('Product')} />
+    <View
+      style={{
+        alignItems: "center",
+        justifyContent: "center",
+        width: "100%",
+        height: "100%",
+        gap: 10,
+      }}
+    >
+      <Text style={{ fontSize: 20, fontWeight: "bold" }}>
+        this is home page
+      </Text>
+      <Button
+        title="Go to Product"
+        onPress={() => navigation.navigate("Product")}
+      />
+      <Button
+        title="Go to Profile"
+        onPress={() => navigation.navigate("Profile")}
+      />
     </View>
-  )
-}
+  );
+};
 
-export default home
+export default home;

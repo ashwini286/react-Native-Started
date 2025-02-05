@@ -7,7 +7,7 @@ import Product from './container/screen/product';
 import Profile from './container/screen/profile';
 import Search from './container/screen/search';
 
-const Stack = createNativeStackNavigator(); // Corrected stack creation
+const Stack = createNativeStackNavigator(); 
 
 const StackNavigator = () => {
   return (
