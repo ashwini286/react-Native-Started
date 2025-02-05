@@ -16,7 +16,7 @@ const home = ({ navigation }) => {
       </Text>
       <Button
         title="Go to Product"
-        onPress={() => navigation.navigate("Product")}
+        onPress={() => navigation.navigate("Product", { id: 1, name: "ashwini" })}
       />
       <Button
         title="Go to Profile"

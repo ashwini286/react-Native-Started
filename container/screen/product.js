@@ -1,6 +1,7 @@
 import React from "react";
 import { Text, View, Button } from "react-native";
-const product = ({ navigation }) => {
+const product = ({ navigation, route}) => {
+  const { id, name } = route.params;
   return (
     <View
       style={{
@@ -14,6 +15,8 @@ const product = ({ navigation }) => {
       <Text style={{ fontSize: 20, fontWeight: "bold" }}>
         this is product page
       </Text>
+      <Text style={{ fontSize: 20, fontWeight: "bold" }}>id: {id}</Text>
+      <Text style={{ fontSize: 20, fontWeight: "bold" }}>name: {name}</Text>
       <Button
         title="Go to Profile"
         onPress={() => navigation.navigate("Profile")}
