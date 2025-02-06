@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View, Button } from "react-native";
-const profile = ({ navigation }) => {
+const profile = ({ navigation}) => {
   return (
     <View
       style={{
@@ -14,6 +14,7 @@ const profile = ({ navigation }) => {
       <Text style={{ fontSize: 20, fontWeight: "bold" }}>
         this is profile page
       </Text>
+     
       <Button
         title="Go to Search"
         onPress={() => navigation.navigate("Search")}
