@@ -20,7 +20,7 @@ const home = ({ navigation }) => {
       />
       <Button
         title="Go to Profile"
-        onPress={() => navigation.navigate("Profile", { id: 2, name: "shreya" })}
+        onPress={() => navigation.navigate("Profile")}
       />
     </View>
   );
